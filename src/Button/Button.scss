@@ -1,0 +1,52 @@
+.button {
+  border-radius: 0.8rem;
+  border: 0;
+  padding: 0.8rem 0.8rem;
+  cursor: pointer;
+
+  &.button-solid {
+    background-color: #41464a;
+    color: white;
+    transition: transform 0.1s ease-in-out;
+
+    &:hover {
+      transform: translate(0, -0.2rem);
+    }
+
+    &:focus {
+      background-color: #2b3035;
+    }
+
+    &:focus-visible {
+      outline: 2px solid #a4acb0;
+    }
+
+    &:active {
+      transform: translate(0, 0);
+    }
+  }
+
+  &.button-outline{
+    border:2px solid #41464a;
+    color:white;
+    transition: transform 0.1s ease-in-out;
+    background: transparent;
+
+    &:hover {
+      transform: translate(0, -0.2rem);
+    }
+
+    &:focus {
+      border:2px solid #2b3035;
+    }
+
+    &:focus-visible {
+      outline: 2px solid #a4acb0;
+    }
+
+    &:active {
+      transform: translate(0, 0);
+    }
+
+  }
+}
