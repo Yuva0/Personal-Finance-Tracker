@@ -1,0 +1,34 @@
+.nav-list-item{
+  cursor:pointer;
+  width: 100%;
+  
+  &.nav-list-item-selected{
+    color:#fca311;
+  }
+
+  & .nav-list-item-container{
+    background-color: transparent;
+    margin-right:1rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+    padding:0.8rem 2rem;
+    border-radius: 0 1.5rem 1.5rem 0;
+    &:hover{
+      background-color: #2E3338;
+    }
+
+    &:focus{
+      background-color: #2E3338;
+    }
+
+    &:focus-visible{
+      outline: 2px solid #a4acb0;
+    }
+  
+    &:active{
+      background-color: #282C31;
+    }
+  }
+}

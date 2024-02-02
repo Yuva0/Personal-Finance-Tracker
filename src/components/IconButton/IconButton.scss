@@ -1,0 +1,28 @@
+.icon-button{
+  border-radius: 50%;
+  border:0;
+  background-color: transparent;
+  color:white;
+  width: 2.4rem;
+  height: 2.4rem;
+  font-size: 1rem;
+  transition: transform 0.1s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    transform: translate(0, -0.2rem);
+    background-color: #2b3035;
+  }
+
+  &:focus {
+    background-color: #2b3035;
+  }
+
+  &:focus-visible {
+    outline: 2px solid #a4acb0;
+  }
+
+  &:active {
+    transform: translate(0, 0);
+  }  
+}
