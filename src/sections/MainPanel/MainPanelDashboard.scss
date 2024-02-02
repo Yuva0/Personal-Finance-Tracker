@@ -1,0 +1,50 @@
+.main-panel-dashboard{
+  margin-left: 20rem;
+  margin:15vh 2rem 2rem 20rem ;
+  display: flex;
+  flex-direction: row;
+  gap:2rem;
+  width: calc(100vw - 20rem);
+  flex-wrap: wrap;
+
+
+  & .main-panel-dashboard-card{
+    background-color: #373D43;
+    border-radius: 0.6rem;
+  }
+
+  & .main-panel-dashboard-card-balance{
+    width: 20vw;
+    height:20vw;
+  }
+
+  & .main-panel-dashboard-total-income{
+    width: 30vw;
+    height: 20vw;
+  }  
+
+  & .main-panel-dashboard-total-expense{
+    width: 20vw;
+    height: 20vw;
+  } 
+
+  & .main-panel-dashboard-transactions{
+    width: calc(50vw + 2rem);
+    height: 20vw;
+  } 
+
+  & .main-panel-dashboard-analytics{
+    width: 20vw;
+    height: 20vw;
+  }
+
+  & .main-panel-dashboard-activities{
+    width: calc(50vw + 2rem);
+    height: 20vw;
+  }
+
+  & .main-panel-dashboard-quick-transfer{
+    width: 20vw;
+    height: 20vw;
+  }
+}

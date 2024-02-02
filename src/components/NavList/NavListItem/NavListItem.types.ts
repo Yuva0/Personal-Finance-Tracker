@@ -3,4 +3,5 @@ export type NavListItemProps = {
   selected?: boolean;
   leadingIcon?: React.ReactNode;
   trailingIcon?: React.ReactNode;
+  notificationCount?: number;
 }

@@ -1,0 +1,32 @@
+.navigation-panel{
+  position: absolute;
+  margin: 15vh 0rem 5vh 2rem;
+  width: 15rem;
+  height: 80vh;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  // justify-content: space-between;
+  gap:1rem;
+  margin-left: 2rem;
+  color:white;
+
+  & .navigation-panel-mainnavlinks{
+    background-color: #373D43;
+    border-radius: 0.6rem;
+    padding:1rem 0
+  }
+
+  & .navigation-panel-sidenavlinks{
+    background-color: #373D43;
+    border-radius: 0.6rem;
+    padding:1rem 0;
+  }
+
+  & .navigation-panel-portfoliolink{
+    background-color: #373D43;
+    border-radius: 0.6rem;
+    padding:1rem 0;
+    height: 10rem;
+  }
+}

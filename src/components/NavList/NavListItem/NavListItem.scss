@@ -1,20 +1,37 @@
 .nav-list-item{
   cursor:pointer;
   width: 100%;
+  height: 2.4rem;
+  display: flex;
+  // justify-content: center;
+  align-items: center;
   
   &.nav-list-item-selected{
     color:#fca311;
   }
 
   & .nav-list-item-container{
+    width: 90%;
+    height: 100%;
     background-color: transparent;
     margin-right:1rem;
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
     align-items: center;
-    gap: 1rem;
-    padding:0.8rem 2rem;
+    padding-left:1.6rem;
     border-radius: 0 1.5rem 1.5rem 0;
+
+    .nav-list-item-start{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap:1rem;
+    }
+
+    .nav-list-item-end{
+      margin-right: 0.4rem;
+    }
+
     &:hover{
       background-color: #2E3338;
     }
