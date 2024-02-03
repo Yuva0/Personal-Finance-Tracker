@@ -8,7 +8,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import "./InvestmentPortfolioOverview.scss";
 
-import { ResponsiveContainer, PieChart, Cell, Pie } from "recharts";
+import { ResponsiveContainer, PieChart, Cell, Pie,Tooltip } from "recharts";
 
 const data = [
   { name: "Group A", value: 400 },
@@ -18,7 +18,44 @@ const data = [
 ];
 const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042"];
 
+type customizedLabelProps = {
+  cx: number;
+  cy: number;
+  midAngle: number;
+  innerRadius: number;
+  outerRadius: number;
+  percent: number;
+  index: number;
+};
+
 const InvestmentPortfolioOverview = () => {
+  const RADIAN = Math.PI / 180;
+  const renderCustomizedLabel = ({
+    cx,
+    cy,
+    midAngle,
+    innerRadius,
+    outerRadius,
+    percent,
+    index,
+  }: customizedLabelProps) => {
+    const radius = innerRadius + (outerRadius - innerRadius) * 0.5;
+    const x = cx + radius * Math.cos(-midAngle * RADIAN);
+    const y = cy + radius * Math.sin(-midAngle * RADIAN);
+
+    return (
+      <text
+        x={x}
+        y={y}
+        fill="white"
+        textAnchor={x > cx ? "start" : "end"}
+        dominantBaseline="central"
+      >
+        {`${(percent * 100).toFixed(0)}%`}
+      </text>
+    );
+  };
+
   return (
     <div className="investment-portfolio-overview">
       <IconButton
@@ -34,16 +71,16 @@ const InvestmentPortfolioOverview = () => {
         <ResponsiveContainer
           width="100%"
           height={(window.innerWidth / 100) * 20 - 72}
-          className="investment-overview-chart"
+          className="investment-portfolio-overview-chart"
         >
           <PieChart>
             <Pie
+              stroke="none"
               data={data}
               cx="50%"
               cy="50%"
+              label={renderCustomizedLabel}
               labelLine={false}
-              // label={renderCustomizedLabel}
-              outerRadius={80}
               fill="#8884d8"
               dataKey="value"
             >
@@ -54,11 +91,12 @@ const InvestmentPortfolioOverview = () => {
                 />
               ))}
             </Pie>
+            <Tooltip />
           </PieChart>
         </ResponsiveContainer>
       </div>
       <IconButton
-        className="investment-overview-arrow"
+        className="investment-portfolio-overview-arrow"
         icon={<FontAwesomeIcon icon={faChevronRight} />}
       />
     </div>

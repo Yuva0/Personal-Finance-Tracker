@@ -18,11 +18,11 @@ const MainPanelDashboard = () => {
         <AssetsLiabilitiesOverview/>
       </Card>
       <Card className="main-panel-dashboard-total-expense main-panel-dashboard-card">
-      <InvestmentPortfolioOverview/>
+        <IncomeReportOverview />
       </Card>
       <Card className="main-panel-dashboard-transactions main-panel-dashboard-card"></Card>
       <Card className="main-panel-dashboard-analytics main-panel-dashboard-card">
-        
+        <InvestmentPortfolioOverview/>
       </Card>
       <Card className="main-panel-dashboard-activities main-panel-dashboard-card"></Card>
       <Card className="main-panel-dashboard-quick-transfer main-panel-dashboard-card"></Card>
