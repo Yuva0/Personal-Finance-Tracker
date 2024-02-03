@@ -3,6 +3,7 @@ import React from "react";
 import "./NavListItem.scss";
 import { NavListItemProps } from "./NavListItem.types";
 import Badge from "../../Badge/Badge";
+import Text from "../../Text/Text";
 
 const NavListItem = ({
   title,
@@ -18,7 +19,7 @@ const NavListItem = ({
       <div className="nav-list-item-container" tabIndex={0}>
         <div className="nav-list-item-start">
         {leadingIcon && <span className="nav-list-item-leading-icon">{leadingIcon}</span>}
-        {title && <span className="nav-list-item-title">{title}</span>}
+        {title && <Text className="nav-list-item-title">{title}</Text>}
         {trailingIcon && <span className="nav-list-item-trailing-icon">{trailingIcon}</span>}
         </div>
         <div className="nav-list-item-end">

@@ -1,0 +1,28 @@
+.income-report-overview{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap:0.4rem;
+  // width: 100%;
+  height: 100%;
+  padding:0 0.5rem;
+
+  & .income-report-overview-arrow{
+    width: 42px;
+    height: 42px;
+  }
+
+  & .income-report-overview-total-income{
+    display: flex;
+    flex-direction: column;
+    gap:0.4rem;
+  }
+
+  & .income-report-overview-total-expense{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap:0.4rem;
+  }
+}

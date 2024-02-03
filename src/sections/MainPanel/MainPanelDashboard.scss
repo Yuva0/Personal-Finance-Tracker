@@ -1,50 +1,52 @@
-.main-panel-dashboard{
+.main-panel-dashboard {
   margin-left: 20rem;
-  margin:15vh 2rem 2rem 20rem ;
+  margin: 15vh 2rem 2rem 20rem;
   display: flex;
   flex-direction: row;
-  gap:2rem;
+  gap: 2rem;
   width: calc(100vw - 20rem);
   flex-wrap: wrap;
+  color:white;
 
-
-  & .main-panel-dashboard-card{
-    background-color: #373D43;
-    border-radius: 0.6rem;
+  & .main-panel-dashboard-credit-card {
+    width: 25vw;
+    height: 15vw;
+    overflow: hidden;
   }
 
-  & .main-panel-dashboard-card-balance{
-    width: 20vw;
-    height:20vw;
+  & .main-panel-dashboard-income {
+    width: 25vw;
+    height: 15vw;
+    overflow: hidden;
   }
 
-  & .main-panel-dashboard-total-income{
-    width: 30vw;
-    height: 20vw;
-  }  
-
-  & .main-panel-dashboard-total-expense{
+  & .main-panel-dashboard-total-expense {
     width: 20vw;
-    height: 20vw;
-  } 
+    height: 15vw;
+    overflow: hidden;
+  }
 
-  & .main-panel-dashboard-transactions{
+  & .main-panel-dashboard-transactions {
     width: calc(50vw + 2rem);
     height: 20vw;
-  } 
-
-  & .main-panel-dashboard-analytics{
-    width: 20vw;
-    height: 20vw;
+    overflow: hidden;
   }
 
-  & .main-panel-dashboard-activities{
+  & .main-panel-dashboard-analytics {
+    width: 20vw;
+    height: 20vw;
+    overflow: hidden;
+  }
+
+  & .main-panel-dashboard-activities {
     width: calc(50vw + 2rem);
     height: 20vw;
+    overflow: hidden;
   }
 
-  & .main-panel-dashboard-quick-transfer{
+  & .main-panel-dashboard-quick-transfer {
     width: 20vw;
     height: 20vw;
+    overflow: hidden;
   }
 }

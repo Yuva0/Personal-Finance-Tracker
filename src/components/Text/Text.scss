@@ -1,0 +1,21 @@
+.text{
+  &.text-vsmall{
+    font-size: 12px;
+  }
+  &.text-small{
+    font-size: 14px;
+  }
+  &.text-medium{
+    font-size: 16px;
+  }
+  &.text-large{
+    font-size: 20px;
+  }
+  &.text-vlarge{
+    font-size: 24px;
+  }
+
+  &.text-number{
+    font-family: 'Consolas', 'Courier New', monospace;    
+  }
+}

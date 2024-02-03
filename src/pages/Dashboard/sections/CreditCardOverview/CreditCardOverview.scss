@@ -1,0 +1,85 @@
+.credit-card-overview{
+  color:white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 1rem 0 1rem;
+  gap:1rem;
+
+  & .credit-card-overview-amount{
+    display: flex;
+    flex-direction: row;
+    gap:2rem;
+
+    & .credit-card-overview-arrow{
+      // border-radius: 50%;
+      // background-color: #282C31;
+      width: 42px;
+      height: 42px;
+    }
+  }
+
+  & .credit-card-overview-amount-balance{
+    display: flex;
+    flex-direction: column;
+    gap:0.4rem;
+
+    & .credit-card-card-balance-title{
+      font-size: 0.8rem;
+    }
+
+    & .credit-card-card-balance-amount{
+      font-size: 1.8rem;
+    }
+  }
+
+  & .credit-card-card-display{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & img{
+      width: 100%;
+      height: auto;
+    }
+
+    & .credit-card-card-details{
+      position: absolute;
+      width: 80%;
+      top:3vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap:1.5vw;
+
+      & .credit-card-card-number{
+        margin-right:1vw;
+        text-align: end;
+        width: 100%;
+        // margin-left: 1vw;
+        letter-spacing: 0.1rem;
+      }
+
+      & .credit-card-card-validity-logo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      & .credit-card-card-logo{
+        width: auto;
+        height: 1rem;
+
+        & img{
+          width: auto;
+          height: 100%;
+        }
+      }
+    }
+  }
+}

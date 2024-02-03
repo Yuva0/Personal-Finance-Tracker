@@ -10,6 +10,8 @@ import {
   faCreditCard,
   faGear,
   faCashRegister,
+  faList,
+  faGift
 } from "@fortawesome/free-solid-svg-icons";
 
 const NavigationPanel = () => {
@@ -26,8 +28,8 @@ const NavigationPanel = () => {
       </div>
       <div className="navigation-panel-sidenavlinks">
         <NavList>
-          <NavListItem title="Dashboard" leadingIcon={<FontAwesomeIcon icon={faArrowRightArrowLeft}/>} selected/>
-          <NavListItem title="Dashboard" leadingIcon={<FontAwesomeIcon icon={faArrowRightArrowLeft}/>}/>
+          <NavListItem title="To-Do List" leadingIcon={<FontAwesomeIcon icon={faList}/>}/>
+          <NavListItem title="Gits" leadingIcon={<FontAwesomeIcon icon={faGift}/>}/>
         </NavList>
       </div>
       <div className="navigation-panel-portfoliolink">Portfolio Image</div>
