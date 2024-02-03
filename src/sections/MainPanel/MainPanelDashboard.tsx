@@ -7,6 +7,8 @@ import Card from "../../components/Card/Card";
 import IncomeReportOverview from "../../pages/Dashboard/sections/IncomeReportOverview/IncomeReportOverview";
 import AssetsLiabilitiesOverview from "../../pages/Dashboard/sections/AssetsLiabilitiesOverview/AssetsLiabilitiesOverview";
 import InvestmentPortfolioOverview from "../../pages/Dashboard/sections/InvestmentPortfolioOverview/InvestmentPortfolioOverview";
+import QuickTransferOverview from "../../pages/Dashboard/sections/QuickTransferOverview/QuickTransferOverview";
+import NetAssetsOverview from "../../pages/Dashboard/sections/NetAssetsOverview/NetAssetsOverview";
 
 const MainPanelDashboard = () => {
   return (
@@ -24,8 +26,12 @@ const MainPanelDashboard = () => {
       <Card className="main-panel-dashboard-analytics main-panel-dashboard-card">
         <InvestmentPortfolioOverview/>
       </Card>
-      <Card className="main-panel-dashboard-activities main-panel-dashboard-card"></Card>
-      <Card className="main-panel-dashboard-quick-transfer main-panel-dashboard-card"></Card>
+      <Card className="main-panel-dashboard-activities main-panel-dashboard-card">
+        <NetAssetsOverview/>
+      </Card>
+      <Card className="main-panel-dashboard-quick-transfer main-panel-dashboard-card">
+        <QuickTransferOverview/>
+      </Card>
     </div>
   );
 };

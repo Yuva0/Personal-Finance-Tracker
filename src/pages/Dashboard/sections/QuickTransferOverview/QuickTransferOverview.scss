@@ -1,0 +1,22 @@
+.quick-transfer-overview{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding:1.5rem 1rem 0 1rem;
+  gap:2rem;
+  align-items: center;
+
+  & .quick-transfer-overview-avatar-group{
+    display: flex;
+    flex-direction: row;
+    column-gap:2rem;
+    row-gap: 1.8rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &::after {
+      content: "";
+      flex: auto;
+    }
+  }
+}
