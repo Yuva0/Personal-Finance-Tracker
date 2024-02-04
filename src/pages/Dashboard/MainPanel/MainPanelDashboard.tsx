@@ -1,14 +1,14 @@
 import React from "react";
 
 import "./MainPanelDashboard.scss";
-import TransactionsOverview from "../../pages/Dashboard/sections/TransactionsOverview/TransactionsOverview";
-import CreditCardOverview from "../../pages/Dashboard/sections/CreditCardOverview/CreditCardOverview";
-import Card from "../../components/Card/Card";
-import IncomeReportOverview from "../../pages/Dashboard/sections/IncomeReportOverview/IncomeReportOverview";
-import AssetsLiabilitiesOverview from "../../pages/Dashboard/sections/AssetsLiabilitiesOverview/AssetsLiabilitiesOverview";
-import InvestmentPortfolioOverview from "../../pages/Dashboard/sections/InvestmentPortfolioOverview/InvestmentPortfolioOverview";
-import QuickTransferOverview from "../../pages/Dashboard/sections/QuickTransferOverview/QuickTransferOverview";
-import NetAssetsOverview from "../../pages/Dashboard/sections/NetAssetsOverview/NetAssetsOverview";
+import TransactionsOverview from "../sections/TransactionsOverview/TransactionsOverview";
+import CreditCardOverview from "../sections/CreditCardOverview/CreditCardOverview";
+import Card from "../../../components/Card/Card";
+import IncomeReportOverview from "../sections/IncomeReportOverview/IncomeReportOverview";
+import AssetsLiabilitiesOverview from "../sections/AssetsLiabilitiesOverview/AssetsLiabilitiesOverview";
+import InvestmentPortfolioOverview from "../sections/InvestmentPortfolioOverview/InvestmentPortfolioOverview";
+import QuickTransferOverview from "../sections/QuickTransferOverview/QuickTransferOverview";
+import NetAssetsOverview from "../sections/NetAssetsOverview/NetAssetsOverview";
 
 const MainPanelDashboard = () => {
   return (

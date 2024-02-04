@@ -1,0 +1,14 @@
+.main-panel-transaction{
+  margin: 15vh 2rem 2rem 20rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: calc(100vw - 20rem);
+  flex-wrap: wrap;
+  color:white;
+
+  & .main-panel-transaction-table{
+    min-height: calc(85vh);
+    padding: 1.5rem 1rem 0 1rem;
+  }
+}

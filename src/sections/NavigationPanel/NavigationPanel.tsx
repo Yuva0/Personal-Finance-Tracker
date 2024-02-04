@@ -19,8 +19,8 @@ const NavigationPanel = () => {
     <div className="navigation-panel">
       <div className="navigation-panel-mainnavlinks">
         <NavList>
-          <NavListItem title="Dashboard" leadingIcon={<FontAwesomeIcon icon={faTableColumns}/>} selected/>
-          <NavListItem title="Transactions" leadingIcon={<FontAwesomeIcon icon={faArrowRightArrowLeft}/>} notificationCount={2}/>
+          <NavListItem title="Dashboard" leadingIcon={<FontAwesomeIcon icon={faTableColumns}/>} />
+          <NavListItem title="Transactions" leadingIcon={<FontAwesomeIcon icon={faArrowRightArrowLeft}/>} notificationCount={2} selected/>
           <NavListItem title="Cards" leadingIcon={<FontAwesomeIcon icon={faCreditCard}/>}/>
           <NavListItem title="Payments" leadingIcon={<FontAwesomeIcon icon={faCashRegister}/>}/>
           <NavListItem title="Settings" leadingIcon={<FontAwesomeIcon icon={faGear}/>}/>

@@ -1,13 +1,11 @@
 import React from "react";
 
 import './Dashboard.scss';
-import NavigationPanel from "../../sections/NavigationPanel/NavigationPanel";
-import MainPanelDashboard from "../../sections/MainPanel/MainPanelDashboard";
+import MainPanelDashboard from "./MainPanel/MainPanelDashboard";
 
 const Dashboard = () => {
   return (
     <div className="dashboard">
-      <NavigationPanel/>
       <MainPanelDashboard/>
     </div>
   )
