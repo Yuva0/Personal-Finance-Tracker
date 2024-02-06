@@ -1,0 +1,89 @@
+.main-panel-transaction-table-container {
+  padding: 1.5rem 1rem 2rem 1rem;
+
+  & .main-panel-transaction-table-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 1rem 0 0.5rem;
+    gap: 1rem;
+  }
+
+  & .main-panel-transaction-table {
+    display: flex;
+    flex-direction: column;
+  }
+
+  & .main-panel-transaction-table-filters {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    & .main-panel-transaction-table-filters-input {
+      margin-right:0.5rem;
+      display: flex;
+      justify-content: end;
+      align-items: end;
+      overflow: hidden;
+
+      &.filters-show-input {
+        & input{
+          width: 100%;
+        }
+      }
+
+      &.filters-hide-input {
+        & input{
+          width: 0;
+          border:0;
+          padding:0;
+        }
+      }
+
+      & input{
+        // transition: width 0.5s;
+        padding:0.3rem 1rem;
+        border-radius: 4rem;
+        border: 1px solid white;
+        background-color: #3A3E41;
+        color:white;
+        font-size: 1rem;
+
+        &:focus{
+          outline: 1px solid white;
+        }
+      }
+    }
+  }
+
+  & .main-panel-transaction-table-filters-content-switcher {
+    border: 1px solid white;
+    border-radius: 4rem;
+    margin-right: 1rem;
+  }
+
+  & .main-panel-transaction-table-content-switcher-item {
+    padding: 0.3rem 1rem;
+  }
+
+  & .main-panel-transaction-table-bills{
+    color: #ff6b35;
+  }
+  & .main-panel-transaction-table-travel{
+    color: #62b6cb;
+  }
+  & .main-panel-transaction-table-shopping{
+    color: #aeb8fe;
+  }
+  & .main-panel-transaction-table-investments{
+    color: #ffe45e;
+  }
+  & .main-panel-transaction-table-rent{
+    color: #dd1c1a;
+  }
+  & .main-panel-transaction-table-salary{
+    color: #52b788;
+  }
+}

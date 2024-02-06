@@ -13,9 +13,12 @@
   }
   &.text-vlarge{
     font-size: 24px;
+  }    
+  &.text-bold{
+    font-weight: bold;
   }
 
   &.text-number{
-    font-family: 'Consolas', 'Courier New', monospace;    
+    font-family: 'Consolas', 'Courier New', monospace;  
   }
 }

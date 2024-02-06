@@ -9,6 +9,8 @@ import AssetsLiabilitiesOverview from "../sections/AssetsLiabilitiesOverview/Ass
 import InvestmentPortfolioOverview from "../sections/InvestmentPortfolioOverview/InvestmentPortfolioOverview";
 import QuickTransferOverview from "../sections/QuickTransferOverview/QuickTransferOverview";
 import NetAssetsOverview from "../sections/NetAssetsOverview/NetAssetsOverview";
+import MainPanelTransaction from "../../Transactions/MainPanel/MainPanelTransaction";
+import RecentTransaction from "../../Transactions/MainPanel/sections/RecentTransaction/RecentTransaction";
 
 const MainPanelDashboard = () => {
   return (
@@ -22,7 +24,9 @@ const MainPanelDashboard = () => {
       <Card className="main-panel-dashboard-total-expense main-panel-dashboard-card">
         <IncomeReportOverview />
       </Card>
-      <Card className="main-panel-dashboard-transactions main-panel-dashboard-card"></Card>
+      <Card className="main-panel-dashboard-transactions main-panel-dashboard-card">
+        <RecentTransaction/>
+      </Card>
       <Card className="main-panel-dashboard-analytics main-panel-dashboard-card">
         <InvestmentPortfolioOverview/>
       </Card>

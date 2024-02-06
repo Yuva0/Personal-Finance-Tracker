@@ -1,0 +1,24 @@
+.table{
+  width: 100%;
+}
+
+.table-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top:1rem;
+  padding: 1rem 0 1rem 0rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+.table-body{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  
+  & .table-row{
+    display: flex;
+    flex-direction: row;
+    padding:1rem 0 0 0;
+  }
+}

@@ -1,0 +1,10 @@
+.main-panel-transaction-analysis {
+  padding: 1.5rem 1rem 2rem 1rem;
+
+  & .main-panel-transaction-analysis-bar{
+    margin:2rem 0 0 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

@@ -1,7 +1,12 @@
-const ContentSwitcher = () => {
+import React from "react";
+import { ContentSwitcherProps } from "./ContentSwitcher.types";
+
+import './ContentSwitcher.scss';
+
+const ContentSwitcher = ({children, className}:ContentSwitcherProps) => {
   return (
-    <div>
-      <h1>ContentSwitcher</h1>
+    <div role="tablist" className={`content-switcher ${className?className:""}`}>
+      {children}
     </div>
   );
 }

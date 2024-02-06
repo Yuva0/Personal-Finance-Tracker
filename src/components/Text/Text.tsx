@@ -3,7 +3,7 @@ import React from "react";
 import './Text.scss';
 import { TextProps } from "./Text.types";
 
-const Text = ({ children, size="medium", variant, className }: TextProps) => {
+const Text = ({ children, size="medium", variant, className, weight="normal" }: TextProps) => {
   if(variant === 'h1')
     return <h1 className={`text ${className?? className}`}>{children}</h1>;
   else if(variant === 'h2')
@@ -19,9 +19,9 @@ const Text = ({ children, size="medium", variant, className }: TextProps) => {
   else if (variant === 'p')
     return <p className={`text ${className}`}>{children}</p>;
   else if (variant === "label")
-    return <span className={`text text-${variant} text-${size} ${className??''}`}>{children}</span>;
+    return <span className={`text text-${variant} text-${size} ${className??''} text-${weight}`}>{children}</span>;
   else if (variant === "number")
-    return (<span className={`text text-${size} text-${variant} ${className}`}>{children}</span>);
+    return (<span className={`text text-${size} text-${variant} ${className??''} text-${weight}`}>{children}</span>);
 
   return <span className={`text ${className}`}>{children}</span>;
 };
