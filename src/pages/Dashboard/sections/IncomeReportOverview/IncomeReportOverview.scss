@@ -13,6 +13,11 @@
     height: 42px;
   }
 
+  & .income-report-overview-income-expense{
+    flex-grow: 1;
+    overflow: hidden;
+  }
+
   & .income-report-overview-total-income{
     display: flex;
     flex-direction: column;
@@ -25,4 +30,20 @@
     flex-direction: column;
     gap:0.4rem;
   }
+}
+
+.income-report-overview-away-next{
+  animation: slideNextAway 0.7s forwards ease-in-out;
+}
+
+.income-report-overview-next-current{
+  animation: slideNextCurrent 0.7s forwards ease-in-out;
+}
+
+.income-report-overview-away-prev{
+  animation: slidePrevAway 0.7s forwards ease-in-out;
+}
+
+.income-report-overview-prev-current{
+  animation: slidePrevCurrent 0.7s forwards ease-in-out;
 }

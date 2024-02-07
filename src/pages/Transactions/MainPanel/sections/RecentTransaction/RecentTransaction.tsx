@@ -23,7 +23,7 @@ const RecentTransaction = () => {
   return (
     <Card className="main-panel-transaction-table-container">
         <div className="main-panel-transaction-table-top">
-          <div className="main-panel-transaction-table-top">
+          <div className="main-panel-transaction-table-start">
             <Text variant="label" size="large">Recent Transactions</Text>
           </div>
           <div className="main-panel-transaction-table-filters">

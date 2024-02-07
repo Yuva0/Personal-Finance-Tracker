@@ -6,28 +6,9 @@
   width: calc(100vw - 25rem);
   color: white;
 
-  & .main-panel-transaction-table-container {
-    padding: 1.5rem 1rem 2rem 1rem;
-
-    & .main-panel-transaction-table-top {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      margin: 0 1rem 0 0.5rem;
-      gap: 1rem;
-    }
-
-    & .main-panel-transaction-table {
-      display: flex;
-      flex-direction: column;
-    }
-
-    & .main-panel-transaction-table-filters {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-    }
+  & .main-panel-income-expense-chart{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
   }
 }

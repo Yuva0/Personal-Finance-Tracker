@@ -1,8 +1,29 @@
-.main-panel-transaction-analysis {
-  padding: 1.5rem 1rem 2rem 1rem;
+.income-analysis-bar{
+  width: calc(50vw + 2rem);
+  height: 18vw;
+  padding: 1rem 1rem 2rem 1rem;
+
+  & .income-analysis-bar-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    margin: 0 1rem 2rem 0.5rem;
+
+    & .income-analysis-bar-content-switcher {
+      border: 1px solid white;
+      border-radius: 4rem;
+      margin-right: 1rem;
+
+      & .income-analysis-bar-content-switcher-item {
+        padding: 0.3rem 1rem;
+      }
+    }
+  }
 
   & .main-panel-transaction-analysis-bar{
-    margin:2rem 0 0 2rem;
     display: flex;
     justify-content: center;
     align-items: center;

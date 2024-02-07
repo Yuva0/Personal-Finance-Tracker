@@ -49,3 +49,39 @@
     overflow: hidden;
   }
 }
+
+@keyframes slideNextAway {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(110%);
+  }
+}
+
+@keyframes slideNextCurrent {
+  0% {
+    transform: translateX(-110%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slidePrevAway {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-110%);
+  }
+}
+
+@keyframes slidePrevCurrent {
+  0% {
+    transform: translateX(110%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

@@ -1,26 +1,67 @@
-.investment-overview{
-  padding:1.5rem 0.5rem 0 0.5rem;
+.investment-overview {
+  padding: 1.5rem 0.5rem 0 0.5rem;
   display: flex;
   flex-direction: row;
   align-items: center;
   // height: 100%;
 
-  & .investment-overview-arrow{
+  & .investment-overview-arrow {
     width: 42px;
     height: 42px;
   }
 
-  & .investment-monthly-investments{
+  & .investment-monthly-investments {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 80%;
-    gap:1rem;
+    gap: 1rem;
   }
 
-  & .investment-overview-chart{
+  & .investment-overview-chart {
     margin-left: -0.5rem;
     width: 100%;
     height: 250px;
+    overflow: hidden;
   }
+}
+
+.investment-overview-chart-away {
+  & svg {
+    animation: slideNextAway 0.7s forwards ease-in-out;
+  }
+}
+
+.investment-overview-chart-away-prev {
+  & svg {
+    animation: slidePrevAway 0.7s forwards ease-in-out;
+  }
+}
+
+.investment-overview-chart-current {
+  & svg {
+    animation: slideNextCurrent 0.7s forwards ease-in-out;
+  }
+}
+
+.investment-overview-chart-current-prev {
+  & svg {
+    animation: slidePrevCurrent 0.7s forwards ease-in-out;
+  }
+}
+
+.investment-overview-chart-title-away {
+  animation: slideNextAway 0.9s forwards ease-in-out;
+}
+
+.investment-overview-chart-title-away-prev {
+  animation: slidePrevAway 0.9s forwards ease-in-out;
+}
+
+.investment-overview-chart-title-current {
+  animation: slideNextCurrent 0.9s forwards ease-in-out;
+}
+
+.investment-overview-chart-title-current-prev {
+  animation: slidePrevCurrent 0.9s forwards ease-in-out;
 }

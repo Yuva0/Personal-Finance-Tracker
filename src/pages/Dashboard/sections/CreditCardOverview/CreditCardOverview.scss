@@ -10,7 +10,7 @@
   & .credit-card-overview-amount{
     display: flex;
     flex-direction: row;
-    gap:2rem;
+    width: 100%;
 
     & .credit-card-overview-arrow{
       // border-radius: 50%;
@@ -21,16 +21,20 @@
   }
 
   & .credit-card-overview-amount-balance{
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     gap:0.4rem;
+    flex-grow: 1;
 
     & .credit-card-card-balance-title{
       font-size: 0.8rem;
+      // animation: slide 1s forwards;
     }
 
     & .credit-card-card-balance-amount{
       font-size: 1.8rem;
+      // animation: slide 1s forwards;
     }
   }
 
@@ -42,6 +46,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
 
     & img{
       width: 100%;
@@ -81,5 +86,21 @@
         }
       }
     }
+  }
+
+  .credit-card-card-display-away{
+    animation: slideNextAway 0.8s forwards ease-in-out;
+  }
+
+  .credit-card-card-display-away-prev{
+    animation: slidePrevAway 0.8s forwards ease-in-out;
+  }
+
+  .credit-card-card-display-current{
+    animation: slideNextCurrent 0.8s forwards ease-in-out;
+  }
+
+  .credit-card-card-display-current-prev{
+    animation: slidePrevCurrent 0.8s forwards ease-in-out;
   }
 }

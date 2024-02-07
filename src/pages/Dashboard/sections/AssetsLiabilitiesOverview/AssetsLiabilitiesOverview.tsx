@@ -18,7 +18,12 @@ import {
   Bar,
 } from "recharts";
 
+import { classNameModifier } from "../../../../helpers/BasicHelper";
+
 const AssetsLiabilitiesOverview = () => {
+  const chartsRef = React.useRef<HTMLDivElement>(null);
+  const chartsTitleRef = React.useRef<HTMLDivElement>(null);
+
   const data = [
     {
       name: "Jan",
@@ -47,38 +52,99 @@ const AssetsLiabilitiesOverview = () => {
     },
   ];
 
+  const prevClickHandler = () => {
+    classNameModifier(
+      [chartsRef],
+      "investment-overview-chart-away-prev",
+      "add"
+    );
+
+    classNameModifier(
+      [chartsTitleRef],
+      "investment-overview-chart-title-away-prev",
+      "add"
+    );
+
+    setTimeout(() => {
+      classNameModifier(
+        [chartsRef],
+        "investment-overview-chart-away-prev",
+        "remove"
+      );
+
+      classNameModifier(
+        [chartsTitleRef],
+        "investment-overview-chart-title-away-prev",
+        "remove"
+      );
+    }, 1000);
+  };
+
+  const nextClickHandler = () => {
+    classNameModifier(
+      [chartsRef],
+      "investment-overview-chart-away",
+      "add"
+    );
+
+    classNameModifier(
+      [chartsTitleRef],
+      "investment-overview-chart-title-away",
+      "add"
+    );
+
+    setTimeout(() => {
+      classNameModifier(
+        [chartsRef],
+        "investment-overview-chart-away",
+        "remove"
+      );
+
+      classNameModifier(
+        [chartsTitleRef],
+        "investment-overview-chart-title-away",
+        "remove"
+      );
+    }, 1000);
+  }
+
+  const barChart = (
+    <BarChart data={data}>
+      <XAxis dataKey="name" style={{ fontSize: "14px" }} />
+      <YAxis style={{ fontSize: "14px" }} />
+      <Bar dataKey="Assets" fill="#2dc653" />
+      <Bar dataKey="Liabilities" fill="#ff4d6d" />
+    </BarChart>
+  );
+
   return (
     <div className="investment-overview">
       <IconButton
         className="investment-overview-arrow"
         icon={<FontAwesomeIcon icon={faChevronLeft} />}
+        onClick={prevClickHandler}
       />
       <div className="investment-monthly-investments">
-        <div>
+        <div ref={chartsTitleRef}>
           <Text variant="label" size="small">
             Monthly&nbsp;
-            <span style={{color:"#2dc653"}}>Assets</span> & <span style={{color:"#ff4d6d"}}>Liabilities</span>
+            <span style={{ color: "#2dc653" }}>Assets</span> &{" "}
+            <span style={{ color: "#ff4d6d" }}>Liabilities</span>
           </Text>
         </div>
         <ResponsiveContainer
           width="100%"
           height={(window.innerWidth / 100) * 15 - 64}
           className="investment-overview-chart"
+          ref={chartsRef}
         >
-          <BarChart data={data}>
-            {/* <CartesianGrid strokeDasharray="3 3" /> */}
-            <XAxis dataKey="name" style={{ fontSize: "14px" }} />
-            <YAxis style={{ fontSize: "14px" }} />
-            {/* <Tooltip /> */}
-            {/* <Legend  wrapperStyle={{fontSize:"14px"}}/> */}
-            <Bar dataKey="Assets" fill="#2dc653" />
-            <Bar dataKey="Liabilities" fill="#ff4d6d" />
-          </BarChart>
+          {barChart}
         </ResponsiveContainer>
       </div>
       <IconButton
         className="investment-overview-arrow"
         icon={<FontAwesomeIcon icon={faChevronRight} />}
+        onClick={nextClickHandler}
       />
     </div>
   );

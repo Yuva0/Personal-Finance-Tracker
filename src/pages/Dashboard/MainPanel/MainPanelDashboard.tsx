@@ -1,7 +1,6 @@
 import React from "react";
 
 import "./MainPanelDashboard.scss";
-import TransactionsOverview from "../sections/TransactionsOverview/TransactionsOverview";
 import CreditCardOverview from "../sections/CreditCardOverview/CreditCardOverview";
 import Card from "../../../components/Card/Card";
 import IncomeReportOverview from "../sections/IncomeReportOverview/IncomeReportOverview";
@@ -9,7 +8,6 @@ import AssetsLiabilitiesOverview from "../sections/AssetsLiabilitiesOverview/Ass
 import InvestmentPortfolioOverview from "../sections/InvestmentPortfolioOverview/InvestmentPortfolioOverview";
 import QuickTransferOverview from "../sections/QuickTransferOverview/QuickTransferOverview";
 import NetAssetsOverview from "../sections/NetAssetsOverview/NetAssetsOverview";
-import MainPanelTransaction from "../../Transactions/MainPanel/MainPanelTransaction";
 import RecentTransaction from "../../Transactions/MainPanel/sections/RecentTransaction/RecentTransaction";
 
 const MainPanelDashboard = () => {

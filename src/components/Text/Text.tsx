@@ -1,9 +1,9 @@
-import React from "react";
+import React, {forwardRef} from "react";
 
 import './Text.scss';
 import { TextProps } from "./Text.types";
 
-const Text = ({ children, size="medium", variant, className, weight="normal" }: TextProps) => {
+const TextContainer = ({ children, size="medium", variant, className, weight="normal" }: TextProps) => {
   if(variant === 'h1')
     return <h1 className={`text ${className?? className}`}>{children}</h1>;
   else if(variant === 'h2')
@@ -25,5 +25,10 @@ const Text = ({ children, size="medium", variant, className, weight="normal" }: 
 
   return <span className={`text ${className}`}>{children}</span>;
 };
+
+const Text = forwardRef<HTMLDivElement, TextProps>((props, ref) => {
+  return <TextContainer {...props} forwardedRef={ref}>{props.children}</TextContainer>;
+});
+
 
 export default Text;
