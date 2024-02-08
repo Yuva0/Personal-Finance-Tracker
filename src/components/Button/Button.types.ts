@@ -1,4 +1,4 @@
 export type ButtonProps = {
   variant?: "solid" | "outline";
-  children: string;
+  children: string | number
 }

@@ -10,6 +10,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus, faSearch, faFilter, faGear } from "@fortawesome/free-solid-svg-icons";
 import Table from "../../../../../components/Table/Table";
 import Input from "../../../../../components/Input/Input";
+import Pagination from "../../../../../components/Pagination/Pagination";
 
 const RecentTransaction = () => {
 
@@ -55,6 +56,9 @@ const RecentTransaction = () => {
           ]}
           headerWidth={[5, 30, 25, 20, 20]}
         />
+        <div className="main-panel-transaction-pagination">
+          <Pagination selectedPage={4} totalPages={7}/>
+        </div>
       </Card>
   )
 };

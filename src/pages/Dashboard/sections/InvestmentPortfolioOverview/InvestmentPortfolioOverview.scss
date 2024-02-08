@@ -1,39 +1,38 @@
-.investment-portfolio-overview{
-  padding:1.5rem 0.5rem 0 0.5rem;
+.investment-portfolio-overview {
+  padding: 1.5rem 0.5rem 0 0.5rem;
   display: flex;
   flex-direction: row;
   align-items: center;
   height: 100%;
   box-sizing: border-box;
 
-  & .investment-portfolio-overview-arrow{
+  & .investment-portfolio-overview-arrow {
     width: 42px;
     height: 42px;
   }
 
-  & .investment-portfolio-overview-investments{
+  & .investment-portfolio-overview-investments {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 80%;
-    gap:1rem;
-   
+    gap: 1rem;
+    overflow: hidden;
   }
 }
 
-
-.investment-portfolio-overview-away-next{
+.investment-portfolio-overview-away-next {
   animation: slideNextAway 0.7s forwards ease-in-out;
 }
 
-.investment-portfolio-overview-next-current{
+.investment-portfolio-overview-next-current {
   animation: slideNextCurrent 0.7s forwards ease-in-out;
 }
 
-.investment-portfolio-overview-away-prev{
+.investment-portfolio-overview-away-prev {
   animation: slidePrevAway 0.7s forwards ease-in-out;
 }
 
-.investment-portfolio-overview-prev-current{
+.investment-portfolio-overview-prev-current {
   animation: slidePrevCurrent 0.7s forwards ease-in-out;
 }

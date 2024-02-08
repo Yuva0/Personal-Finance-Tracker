@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import Text from "../../../../components/Text/Text";
 import IconButton from "../../../../components/IconButton/IconButton";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -7,6 +7,7 @@ import {
   faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
 import "./InvestmentPortfolioOverview.scss";
+import { classNameModifier } from "../../../../helpers/BasicHelper";
 
 import { ResponsiveContainer, PieChart, Cell, Pie,Tooltip } from "recharts";
 
@@ -30,6 +31,10 @@ type customizedLabelProps = {
 
 const InvestmentPortfolioOverview = () => {
   const RADIAN = Math.PI / 180;
+  const investmentHeader = useRef<HTMLDivElement>(null);
+  const investmentChart = useRef<HTMLDivElement>(null);
+
+
   const renderCustomizedLabel = ({
     cx,
     cy,
@@ -56,14 +61,31 @@ const InvestmentPortfolioOverview = () => {
     );
   };
 
+  const prevClickHandler = () => {
+    classNameModifier([investmentHeader, investmentChart], "investment-portfolio-overview-away-prev", "add");
+
+    setTimeout(() => {
+      classNameModifier([investmentHeader, investmentChart], "investment-portfolio-overview-away-prev", "remove");
+    }, 1000);
+  }
+
+  const nextClickHandler = () => {
+    classNameModifier([investmentHeader, investmentChart], "investment-portfolio-overview-away-next", "add");
+
+    setTimeout(() => {
+      classNameModifier([investmentHeader, investmentChart], "investment-portfolio-overview-away-next", "remove");
+    }, 1000);
+  }
+
   return (
     <div className="investment-portfolio-overview">
       <IconButton
         className="investment-portfolio-overview-arrow"
         icon={<FontAwesomeIcon icon={faChevronLeft} />}
+        onClick={prevClickHandler}
       />
       <div className="investment-portfolio-overview-investments">
-        <div>
+        <div ref={investmentHeader}>
           <Text variant="label" size="small">
             Investment Portfolio
           </Text>
@@ -72,6 +94,7 @@ const InvestmentPortfolioOverview = () => {
           width="100%"
           height={(window.innerWidth / 100) * 20 - 72}
           className="investment-portfolio-overview-chart"
+          ref={investmentChart}
         >
           <PieChart>
             <Pie
@@ -98,6 +121,7 @@ const InvestmentPortfolioOverview = () => {
       <IconButton
         className="investment-portfolio-overview-arrow"
         icon={<FontAwesomeIcon icon={faChevronRight} />}
+        onClick={nextClickHandler}
       />
     </div>
   );
