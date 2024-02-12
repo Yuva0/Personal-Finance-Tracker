@@ -7,6 +7,7 @@ const Button = ({
   variant = "solid",
   children,
   type = "text",
+  selected = false,
 }: ButtonProps) => {
   if (
     typeof children === "string" ||
@@ -15,7 +16,7 @@ const Button = ({
     type = "icon";
   }
   return (
-    <button className={`button button-${variant} button-${type}`}>
+    <button className={`button button-${variant} button-${type} ${selected ? "button-selected":""}`}>
       {children}
     </button>
   );

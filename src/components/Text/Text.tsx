@@ -100,7 +100,7 @@ const TextContainer = ({
       >
         {children}
       </span>
-    );
+  );
 
   return (
     <span className={`text ${className} ${selected ? "text-selected" : ""}`}>

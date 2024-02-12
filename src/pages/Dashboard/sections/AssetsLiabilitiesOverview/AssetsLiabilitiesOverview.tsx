@@ -112,8 +112,8 @@ const AssetsLiabilitiesOverview = () => {
     <BarChart data={data}>
       <XAxis dataKey="name" style={{ fontSize: "14px" }} />
       <YAxis style={{ fontSize: "14px" }} />
-      <Bar dataKey="Assets" fill="#2dc653" />
-      <Bar dataKey="Liabilities" fill="#ff4d6d" />
+      <Bar dataKey="Assets" fill="var(--color-success-600)" />
+      <Bar dataKey="Liabilities" fill="var(--color-critical-600)" />
     </BarChart>
   );
 
@@ -128,8 +128,8 @@ const AssetsLiabilitiesOverview = () => {
         <div ref={chartsTitleRef}>
           <Text variant="label" size="small">
             Monthly&nbsp;
-            <span style={{ color: "#2dc653" }}>Assets</span> &{" "}
-            <span style={{ color: "#ff4d6d" }}>Liabilities</span>
+            <span style={{ color: "var(--color-success-600)" }}>Assets</span> &{" "}
+            <span style={{ color: "var(--color-critical-600)" }}>Liabilities</span>
           </Text>
         </div>
         <ResponsiveContainer

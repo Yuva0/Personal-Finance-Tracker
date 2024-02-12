@@ -3,4 +3,5 @@ export type IconButtonProps = {
   label?: string;
   className?: string;
   onClick?: (e:React.MouseEvent) => void;
+  selected?: boolean;
 };

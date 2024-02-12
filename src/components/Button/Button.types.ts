@@ -4,4 +4,5 @@ export type ButtonProps = {
   children: string | number | React.ReactNode;
   onClick?: (e:React.MouseEvent<HTMLButtonElement>) => void;
   className?: string;
+  selected?: boolean;
 }

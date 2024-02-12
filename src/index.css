@@ -30,7 +30,19 @@
   --color-gold-500: #FFB700;
   --color-gold-600: #FFC300;
 
+  --color-success-300: #6FD88A;
+  --color-success-400: #61D47E;
+  --color-success-500: #40CB63;
+  --color-success-600: #2DC653;
+  --color-success-700: #26A646;
+  --color-success-800: #239740;
 
+  --color-critical-300: #FFA2B4;
+  --color-critical-400: #FF99AC;
+  --color-critical-500: #FF708A;
+  --color-critical-600: #FF4D6D;
+  --color-critical-700: #FF3358;
+  --color-critical-800: #E82E50;
 }
 
 body {

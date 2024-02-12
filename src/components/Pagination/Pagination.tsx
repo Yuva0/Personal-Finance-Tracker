@@ -26,12 +26,12 @@ const Pagination = ({
             }`}
             onClick={() => onPageChange?.(index + 1)}
           >
-            <Button>{index + 1}</Button>
+            <Button selected={selectedPage === index + 1}>{index + 1}</Button>
           </li>
         ))}
         <li className="pagination-container-list-item">
           <IconButton
-            icon={<FontAwesomeIcon width={12} icon={faArrowRight} />}
+            icon={<FontAwesomeIcon width={12} icon={faArrowRight}/>}
           />
         </li>
       </ul>

@@ -20,6 +20,30 @@
     background-color: var(--color-black-200);
     border: 2px solid var(--color-black-200);
 
+    &.button-selected{
+      background-color: var(--color-black-600);
+      border: 2px solid var(--color-black-600);
+
+      &:hover{
+        background-color: var(--color-black-700);
+        border: 2px solid var(--color-black-700);
+      }
+
+      &:focus{
+        background-color: var(--color-black-700);
+        border: 2px solid var(--color-black-700);
+      }
+
+      &:focus-visible {
+        outline: 2px solid var(--color-white-900);
+      }
+
+      &:active {
+        background-color: var(--color-black-800);
+        border: 2px solid var(--color-black-800);
+      }
+    }
+
     &:hover {
       background-color: var(--color-black-300);
       border: 2px solid var(--color-black-300);
