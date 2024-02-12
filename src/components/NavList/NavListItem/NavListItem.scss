@@ -7,7 +7,7 @@
   align-items: center;
   
   &.nav-list-item-selected{
-    color:#fca311;
+    color:var(--color-gold-400);
   }
 
   & .nav-list-item-container{
@@ -33,19 +33,19 @@
     }
 
     &:hover{
-      background-color: #2E3338;
+      background-color: var(--color-black-600);
     }
 
     &:focus{
-      background-color: #2E3338;
+      background-color: var(--color-black-600);
     }
 
     &:focus-visible{
-      outline: 2px solid #a4acb0;
+      outline: 2px solid var(--color-white-900);
     }
   
     &:active{
-      background-color: #282C31;
+      background-color: var(--color-black-700);
     }
   }
 }

@@ -19,11 +19,11 @@ const NavListItem = ({
       <div className="nav-list-item-container" tabIndex={0}>
         <div className="nav-list-item-start">
         {leadingIcon && <span className="nav-list-item-leading-icon">{leadingIcon}</span>}
-        {title && <Text className="nav-list-item-title">{title}</Text>}
+        {title && <Text className="nav-list-item-title" selected={selected}>{title}</Text>}
         {trailingIcon && <span className="nav-list-item-trailing-icon">{trailingIcon}</span>}
         </div>
         <div className="nav-list-item-end">
-          {notificationCount && <Badge label={notificationCount}/>}
+          {notificationCount && <Badge label={notificationCount} selected={selected}/>}
         </div>
         
       </div>

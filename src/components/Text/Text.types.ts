@@ -5,4 +5,5 @@ export type TextProps = {
   size?: "vsmall" | "small" | "medium" | "large" | "vlarge";
   className?: string;
   forwardedRef?: React.ForwardedRef<HTMLDivElement>;
+  selected?: boolean;
 };

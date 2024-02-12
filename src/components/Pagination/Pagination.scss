@@ -6,7 +6,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap:2rem;
+    gap:1rem;
 
     & .pagination-container-list-item{
       display: flex;
@@ -17,7 +17,7 @@
       width: 32px;
       height: 32px;
       border-radius: 50%;
-      background-color: #495057;
+      // background-color: #495057;
 
       &.pagination-container-list-item-selected{
         background-color: #2b3035;;

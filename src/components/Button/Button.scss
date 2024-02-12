@@ -1,52 +1,63 @@
 .button {
-  border-radius: 0.8rem;
+  border-radius: 0.6rem;
   border: 0;
-  padding: 0.8rem 0.8rem;
   cursor: pointer;
 
+  &.button-text {
+    padding: 0.6rem 0.6rem;
+  }
+
+  &.button-icon {
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   &.button-solid {
-    background-color: #41464a;
-    color: white;
-    transition: transform 0.1s ease-in-out;
+    background-color: var(--color-black-200);
+    border: 2px solid var(--color-black-200);
 
     &:hover {
-      transform: translate(0, -0.2rem);
+      background-color: var(--color-black-300);
+      border: 2px solid var(--color-black-300);
     }
 
     &:focus {
-      background-color: #2b3035;
+      background-color: var(--color-black-300);
+      border: 2px solid var(--color-black-300);
     }
 
     &:focus-visible {
-      outline: 2px solid #a4acb0;
+      outline: 2px solid var(--color-white-900);
     }
 
     &:active {
-      transform: translate(0, 0);
+      background-color: var(--color-black-600);
+      border: 2px solid var(--color-black-600);
     }
   }
 
-  &.button-outline{
-    border:2px solid #41464a;
-    color:white;
-    transition: transform 0.1s ease-in-out;
+  &.button-outline {
+    border: 2px solid var(--color-black-200);
     background: transparent;
 
     &:hover {
-      transform: translate(0, -0.2rem);
+      background-color: var(--color-black-300);
     }
 
     &:focus {
-      border:2px solid #2b3035;
+      background-color: var(--color-black-300);
     }
 
     &:focus-visible {
-      outline: 2px solid #a4acb0;
+      outline: 2px solid var(--color-white-900);
     }
 
     &:active {
-      transform: translate(0, 0);
+      background-color: var(--color-black-600);
     }
-
   }
 }

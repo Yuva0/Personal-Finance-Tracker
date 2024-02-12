@@ -1,14 +1,13 @@
 .content-switcher-item{
   cursor: pointer;
-  background: #41464a;
-  border:0;
-  border-left:1px solid white;
-  color:white;
+  background-color: var(--color-black-100);
+  border: 1px solid var(--color-white-500);
+  color:var(--color-white-400);
 
   &:first-child{
     border-top-left-radius: 4rem;
     border-bottom-left-radius: 4rem;
-    border-left:0px;
+    // border-left:0px;
   }
   &:last-child{
     border-top-right-radius: 4rem;
@@ -16,27 +15,36 @@
   }
 
   &:hover{
-    background-color: #3A3E41;
+    background-color: var(--color-black-200);
   }
   
   &:focus{
-    background-color: #3A3E41;
+    background-color: var(--color-black-100);
   }
   
   &:focus-visible{
-    outline:2px solid white;
+    outline: 1px solid var(--color-white-500);
     z-index: 2;
   }
 
   &:active{
-    background-color: #303336;
+    background-color: var(--color-black-300);
   }
 
   &.content-switcher-item-selected{
-    background-color: #282C31;
+    background-color: var(--color-black-500);
 
     &:hover{
-      background-color: #282C31;
+      background-color: var(--color-black-600);
+    }
+
+    &:focus{
+      background-color: var(--color-black-600);
+    }
+    
+    &:focus-visible{
+      outline: 1px solid var(--color-white-500);
+      z-index: 2;
     }
 
     &:active{

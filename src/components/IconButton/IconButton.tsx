@@ -1,7 +1,8 @@
 import React from "react";
 
 import './IconButton.scss';
-import { IconButtonProps } from "./IconButton.types";;
+import { IconButtonProps } from "./IconButton.types";
+import Button from "../Button/Button";
 
 const IconButton = ({ icon, onClick, className, ...props }:IconButtonProps) => {
   
@@ -11,9 +12,9 @@ const IconButton = ({ icon, onClick, className, ...props }:IconButtonProps) => {
   }
 
   return (
-    <button className={`icon-button ${className??""}`} onClick={onClickHandler} {...props}>
+    <Button type="icon" className={`icon-button ${className??""}`} onClick={onClickHandler} {...props}>
       {icon}
-    </button>
+    </Button>
   );
 };
 
