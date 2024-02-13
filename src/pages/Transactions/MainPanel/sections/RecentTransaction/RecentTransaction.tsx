@@ -11,6 +11,7 @@ import { faPlus, faSearch, faFilter, faGear } from "@fortawesome/free-solid-svg-
 import Table from "../../../../../components/Table/Table";
 import Input from "../../../../../components/Input/Input";
 import Pagination from "../../../../../components/Pagination/Pagination";
+import Button from "../../../../../components/Button/Button";
 
 const RecentTransaction = () => {
 
@@ -33,7 +34,9 @@ const RecentTransaction = () => {
               <ContentSwitcherItem label="Monthly" className="main-panel-transaction-table-content-switcher-item"/>
               <ContentSwitcherItem label="Weekly" className="main-panel-transaction-table-content-switcher-item"/>
             </ContentSwitcher>
-            <span className={`main-panel-transaction-table-filters-input ${showInput ? "filters-show-input":"filters-hide-input"}`}><Input value=""/></span>
+            {/* <span className={`main-panel-transaction-table-filters-input ${showInput ? "filters-show-input":"filters-hide-input"}`}> */}
+              <Input value=""/>
+            {/* </span> */}
             <span><IconButton icon={<FontAwesomeIcon icon={faSearch}/>} onClick={toggleInputHandler}/></span>
             <span><IconButton icon={<FontAwesomeIcon icon={faPlus}/>}/></span>
             <span><IconButton icon={<FontAwesomeIcon icon={faFilter}/>}/></span>

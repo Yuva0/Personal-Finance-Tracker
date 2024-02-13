@@ -10,8 +10,8 @@ const Button = ({
   selected = false,
 }: ButtonProps) => {
   if (
-    typeof children === "string" ||
-    (typeof children === "number" && children.toString().length === 1)
+    (typeof children === "string" ||
+    typeof children === "number") && children.toString().length === 1
   ) {
     type = "icon";
   }

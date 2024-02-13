@@ -17,7 +17,7 @@ const data = [
   { name: "Bonds", value: 300 },
   { name: "Life Insurance", value: 200 },
 ];
-const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042"];
+const COLORS = ["var(--color-info-400)", "var(--color-crimson-400)", "var(--color-orange-400)", "var(--color-critical-400)"];
 
 type customizedLabelProps = {
   cx: number;
