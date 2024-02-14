@@ -4,13 +4,13 @@
     font-size: 12px;
   }
   &.text-small{
-    font-size: 14px;
+    font-size: var(--font-size-small);
   }
   &.text-medium{
-    font-size: 16px;
+    font-size: var(--font-size-medium);
   }
   &.text-large{
-    font-size: 20px;
+    font-size: var(--font-size-large);
   }
   &.text-vlarge{
     font-size: 24px;

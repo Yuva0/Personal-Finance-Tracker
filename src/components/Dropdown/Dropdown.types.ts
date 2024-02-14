@@ -1,8 +1,9 @@
 export type DropdownProps = {
-  options: {
+  options?: {
     value: string;
     label: string;
   }[];
-  title: string;
-  selectedValue: string;
+  title?: string;
+  selectedValue?: string;
+  className?: string;
 }

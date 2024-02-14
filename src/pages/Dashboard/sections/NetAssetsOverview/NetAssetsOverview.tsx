@@ -139,8 +139,11 @@ const NetAssetsOverview = () => {
               </linearGradient>
             </defs>
             {/* <CartesianGrid strokeDasharray="3 3" /> */}
-            <XAxis dataKey="name" />
-            <YAxis />
+            <XAxis
+              dataKey="name"
+              style={{ fontSize: "var(--font-size-small)" }}
+            />
+            <YAxis style={{ fontSize: "var(--font-size-small)" }} />
             {/* <Tooltip /> */}
             <Area
               type="monotone"

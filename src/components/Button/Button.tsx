@@ -8,7 +8,14 @@ const Button = ({
   children,
   type = "text",
   selected = false,
+  onClick,
 }: ButtonProps) => {
+
+  const onClickHandler = (e:React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+    onClick?.(e);
+  }
+
   if (
     (typeof children === "string" ||
     typeof children === "number") && children.toString().length === 1
@@ -16,7 +23,7 @@ const Button = ({
     type = "icon";
   }
   return (
-    <button className={`button button-${variant} button-${type} ${selected ? "button-selected":""}`}>
+    <button className={`button button-${variant} button-${type} ${selected ? "button-selected":""}`} onClick={onClickHandler}>
       {children}
     </button>
   );

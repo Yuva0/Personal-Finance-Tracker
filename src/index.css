@@ -51,6 +51,10 @@
   --color-crimson-400: #FF3358;
 
   --color-rose-400: #FF99AC;
+
+  --font-size-medium: 16px;
+  --font-size-small:14px;
+  --font-size-large: 20px;
 }
 
 body {
@@ -72,4 +76,15 @@ button {
   border: 0;
   background-color: inherit;
   color: inherit;
+}
+
+ul{
+  margin:0;
+  padding:0;
+}
+
+li{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }

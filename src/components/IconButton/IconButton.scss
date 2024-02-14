@@ -3,9 +3,8 @@
   border:0;
   background-color: transparent;
   color:white;
-  width: 2.4rem;
-  height: 2.4rem;
-  font-size: 1rem;
+  padding:0.6rem;
+  font-size: var(--font-size-medium);
   cursor: pointer;
 
   &:hover {

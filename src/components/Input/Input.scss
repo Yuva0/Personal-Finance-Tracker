@@ -1,9 +1,18 @@
 .input {
   width: 100%;
   box-sizing: border-box;
-  font-size: 16px;
-  border-radius: 0.6rem;
+  border-radius: 1rem;
   background-color: var(--color-black-200);
-  border:2px solid var(--color-black-400);
-  padding: 0.4rem 0.4rem;
+  border:1px solid var(--color-white-200);
+  padding: 0.3rem 0.4rem;
+  color:var(--color-primitive-white);
+  font-size: var(--font-size-small);
+
+  &:focus{
+    background-color: var(--color-black-300);
+  }
+  
+  &:focus-visible{
+    outline: 1px solid var(--color-white-500);
+  }
 }
